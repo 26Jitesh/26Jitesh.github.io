@@ -56,3 +56,8 @@ footer {
   flex: 1;
   min-width: 250px;
 }
+header p a {
+  color: #bbb;
+  font-size: 0.95em;
+  text-decoration: underline;
+}
