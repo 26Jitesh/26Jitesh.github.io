@@ -1,63 +1,103 @@
-body {
-  font-family: Arial, sans-serif;
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+  padding-bottom: 50px;
 }
 
-header {
-  background: #222;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
-}
-
-header nav a {
-  margin: 0 1em;
-  color: #fff;
+a {
+  color: #90caf9;
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+nav a {
+  margin: 0 1em;
+  font-size: 1em;
+}
+
+/* Main content */
 main {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 
 section {
   margin-bottom: 2em;
 }
 
-footer {
-  text-align: center;
-  padding: 1em;
-  background: #222;
-  color: #fff;
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3em;
 }
+
+/* About section */
 .about-container {
   display: flex;
-  align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .profile-img {
-  width: 180px;
+  width: 160px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .about-text {
   flex: 1;
   min-width: 250px;
 }
-header p a {
-  color: #bbb;
-  font-size: 0.95em;
-  text-decoration: underline;
+
+/* Lists */
+ul {
+  padding-left: 1.2em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1e1e1e;
+  color: #aaa;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
 }
